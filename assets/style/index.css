@@ -9,6 +9,7 @@
     --app-blue: #3c57ff;
     --app-blue-hover: #364ee6;
     --app-text-color: #e8deeb;
+    --app-pink: #d2738a;
 }
     
 body {
@@ -21,11 +22,59 @@ body {
     margin-inline: auto;
 }
 
+.flex {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 50px
+}
+
 /* - - - - - - - - */
 /* Main style      */
 /* - - - - - - - - */
 
+.logo {
+    width: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+
 .box-1 {
     background-color: #000000;
     color: var(--app-text-color);
+    width: 600px;
+    height: 700px;
+    padding: 15px
+}
+
+.current-time {
+    font-size: 78px;
+    letter-spacing: 20px;
+    margin-bottom: 30px;
+    color: var(--app-pink);
+    filter: drop-shadow(0 0 5px rgb(243, 143, 190));
+}
+
+.input-time, .set-alarm {
+    background-color: #000000;
+    color: var(--app-pink);
+    width: 185px;
+    height: 50px;
+    padding: 5px;
+    font-size: 20px;
+    border-style: solid;
+    border-color: var(--app-pink);
+    border-width: 2px;
+}
+
+.blink {
+    animation: blinker .035s linear infinite;
+}
+@keyframes blinker {
+    50% {
+      opacity: 0.5;
+    }
 }
