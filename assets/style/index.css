@@ -68,6 +68,7 @@ body {
     border-style: solid;
     border-color: var(--app-pink);
     border-width: 2px;
+    margin: 10px;
 }
 
 .blink {
