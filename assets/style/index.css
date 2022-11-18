@@ -1,20 +1,31 @@
 @import "./reset.css";
 
 :root {
-    --app-dark-bg: #1a1d28;
+    --app-dark-bg: #0a0a0a;
     --app-red: #ff3c57;
     --app-green: #33ab4e;
     --app-purple: #833cff;
     --app-orange: #ff833c;
     --app-blue: #3c57ff;
     --app-blue-hover: #364ee6;
+    --app-text-color: #e8deeb;
 }
     
 body {
+    background-image: url(https://fauux.neocities.org/bg_66.gif);
     background-color: var(--app-dark-bg);
 }
     
 .container {
     width: min(100% - 30px, 1280px);
     margin-inline: auto;
+}
+
+/* - - - - - - - - */
+/* Main style      */
+/* - - - - - - - - */
+
+.box-1 {
+    background-color: #000000;
+    color: var(--app-text-color);
 }
