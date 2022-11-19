@@ -74,13 +74,14 @@ body {
 label {
     display:block;
     text-align: left;
-    margin-left: 90px;
+    margin-left: 120px;
     font-size: 20px;
     color: var(--app-pink);
+    letter-spacing: 15px;
 }
 
 .cur-time {
-    margin-left: 245px;
+    margin-left: 150px;
 }
 
 .blink {
