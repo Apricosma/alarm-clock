@@ -14,14 +14,17 @@
         <link rel="stylesheet" type="text/css" href="assets/style/index.css">
         <script src="assets/script/index.js" defer></script>
     </head>
-    <body>
+    <body class="bg">
         <main>
             <div class="container flex">
                 <div class="box-1">
                     <img src="./assets/media/output-onlinegiftools.gif" class="logo" alt="logo">
+                    <label for="current-time" class="cur-time blink">Current time..</label>
                     <div class="current-time blink">05:09:35AM</div>
-                    <input type="text" class="input-time blink" placeholder="Enter alarm time...">
+                    <label for="input-t" class="blink">Time from now..</label>
+                    <input type="text" class="input-time blink" id="input-t" placeholder="hh:mm:ss">
                     <input type="button" class="set-alarm blink" value="Set alarm...">
+                    <div class="alarm-output"></div>
                 </div>
             </div>
         </main>

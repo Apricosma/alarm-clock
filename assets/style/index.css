@@ -13,7 +13,7 @@
 }
     
 body {
-    background-image: url(https://fauux.neocities.org/bg_66.gif);
+    background-image: url(https://fauux.neocities.org/bg_314.gif);
     background-color: var(--app-dark-bg);
 }
     
@@ -46,11 +46,11 @@ body {
     background-color: #000000;
     color: var(--app-text-color);
     width: 600px;
-    height: 700px;
+    height: 750px;
     padding: 15px
 }
 
-.current-time {
+.current-time, .alarm-output {
     font-size: 68px;
     letter-spacing: 15px;
     margin-bottom: 30px;
@@ -71,11 +71,23 @@ body {
     margin: 10px;
 }
 
+label {
+    display:block;
+    text-align: left;
+    margin-left: 90px;
+    font-size: 20px;
+    color: var(--app-pink);
+}
+
+.cur-time {
+    margin-left: 245px;
+}
+
 .blink {
-    animation: blinker .035s linear infinite;
+    animation: blinker .2s linear infinite;
 }
 @keyframes blinker {
     50% {
-      opacity: 0.5;
+      opacity: 0.8;
     }
 }
